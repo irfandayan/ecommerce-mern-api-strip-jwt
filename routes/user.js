@@ -6,4 +6,6 @@ router.get("/usertest", (req, res) => {
   res.send("User test");
 });
 
+router.post("userposttest", (req, res) => {});
+
 export default router;
