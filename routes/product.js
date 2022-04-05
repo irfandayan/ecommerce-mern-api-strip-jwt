@@ -1,12 +1,13 @@
-import Product from "../models/Product";
+import express from "express";
+import Product from "../models/Product.js";
 
 import {
   verifyToken,
   verifyTokenAndAuthorization,
   verifyTokenAndAdmin,
-} from "./verifyToken";
+} from "./verifyToken.js";
 
-const router = require("express").Router();
+const router = express.Router();
 
 //CREATE
 

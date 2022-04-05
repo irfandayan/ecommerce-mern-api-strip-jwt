@@ -1,12 +1,13 @@
-import Cart from "../models/Cart";
+import express from "express";
+import Cart from "../models/Cart.js";
 
-const {
+import {
   verifyToken,
   verifyTokenAndAuthorization,
   verifyTokenAndAdmin,
-} = require("./verifyToken");
+} from "./verifyToken.js";
 
-const router = require("express").Router();
+const router = express.Router();
 
 //CREATE
 

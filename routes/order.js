@@ -5,7 +5,7 @@ import {
   verifyToken,
   verifyTokenAndAuthorization,
   verifyTokenAndAdmin,
-} from "./verifyToken";
+} from "./verifyToken.js";
 
 const router = express.Router();
 
@@ -98,4 +98,4 @@ router.get("/income", verifyTokenAndAdmin, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
